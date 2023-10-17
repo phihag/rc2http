@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>RødeCaster Duo</title>
+<style>
+html, body {
+	font-size: 16px; font-family: sans-serif;
+}
+button{
+	font-size: 120%;
+}
+#buttons-list label {
+	display: inline-block;
+	margin: 0.4em 0.4em;
+}
+#buttons-list label:first-child {
+	margin-left: 0;
+}
+</style>
+</head>
+<body data-buttonJSON="{{ buttonJSON }}">
+
+<!--<img src="/screenshot.png" style="width:1280px;heigth:720px;" id="screenshot" />-->
+
+<form id="buttons-form">
+<div id="buttons-list"></div>
+
+<button type="submit">Press buttons</button>
+</form>
+
+<script src="/static/client.js"></script>
+</body>
+</html>
