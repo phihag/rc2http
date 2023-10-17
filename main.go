@@ -49,12 +49,12 @@ var BUTTONS = []button{
 	button{"page left", "\xb0\x37"},
 	button{"page right", "\xb1\x37"},
 
-	button{"Smart Pad 1 (top left)", "\xb0\x23"},
-	button{"Smart Pad 2 (middle left)", "\xb1\x23"},
-	button{"Smart Pad 3 (bottom left)", "\xb2\x23"},
-	button{"Smart Pad 4 (top right)", "\xb3\x23"},
-	button{"Smart Pad 5 (middle right)", "\xb4\x23"},
-	button{"Smart Pad 6 (bottom right)", "\xb5\x23"},
+	button{"SMART Pad 1 (top left)", "\xb0\x23"},
+	button{"SMART Pad 2 (middle left)", "\xb1\x23"},
+	button{"SMART Pad 3 (bottom left)", "\xb2\x23"},
+	button{"SMART Pad 4 (top right)", "\xb3\x23"},
+	button{"SMART Pad 5 (middle right)", "\xb4\x23"},
+	button{"SMART Pad 6 (bottom right)", "\xb5\x23"},
 
 	button{"Big wheel button", "\xb0\x2f"},
 	// big wheel: b0 2b
