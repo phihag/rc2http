@@ -190,7 +190,7 @@ func pressButtonsHandler(w http.ResponseWriter, r *http.Request) {
 
 func main() {
 	// Set this program to lowest priority – any audio handling is more important!
-	syscall.Setpriority(syscall.PRIO_PROCESS, 0, 19)
+	syscall.Setpriority(syscall.PRIO_PGRP, 0, 19)
 
 	parser := argparse.NewParser("rc2http", "HTTP server for Rødecaster Duo")
 	port := parser.String("p", "port", &argparse.Options{Default: ":80", Help: "Address & port to listen to"})
