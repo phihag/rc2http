@@ -1,0 +1,32 @@
+#!/bin/sh
+
+### BEGIN INIT INFO
+# Provides:          rc2http
+# Required-Start:
+# Required-Stop:
+# Default-Start:     5
+# Default-Stop:
+# Short-Description: HTTP server (https://github.com/phihag/rc2http)
+#
+### END INIT INFO
+
+
+# /etc/init.d/rc2http
+#
+
+case "$1" in
+start)
+   echo "Starting rc2http"
+   start-stop-daemon --start --name rc2http --background /usr/local/bin/rc2http
+   ;;
+stop)
+   echo "Stopping rc2http"
+   start-stop-daemon --stop --name rc2http
+   ;;
+*)
+   echo "Usage: /etc/init.d/rc2http {start|stop}"
+   exit 1
+   ;;
+esac
+
+exit 0

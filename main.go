@@ -193,12 +193,18 @@ func main() {
 	syscall.Setpriority(syscall.PRIO_PGRP, 0, 19)
 
 	parser := argparse.NewParser("rc2http", "HTTP server for Rødecaster Duo")
+	installService := parser.Flag("", "install-service", &argparse.Options{Help: "Install and start as a service"})
 	port := parser.String("p", "port", &argparse.Options{Default: ":80", Help: "Address & port to listen to"})
 	// Parse input
 	err := parser.Parse(os.Args)
 	if err != nil {
 		fmt.Print(parser.Usage(err))
 		os.Exit(1)
+	}
+
+	if *installService {
+		InstallService()
+		os.Exit(0)
 	}
 
 	http.HandleFunc("/press-buttons", pressButtonsHandler)
