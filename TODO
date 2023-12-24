@@ -1,6 +1,20 @@
-midi watcher
+screenshot route!
+
+steal socket 2345 (& kill gui thread if it got it)
+
+proxy port 2345
+
+
+
+store config!
 
 poweroff
 
-screenshot
+document full installation from a new machine
 
+rearrange smart pads
+	https://discord.com/channels/1001456982777155634/1180049384700915763
+
+click dials to mute https://discord.com/channels/1001456982777155634/1176024318925361213/1176024318925361213
+
+https://discord.com/channels/1001456982777155634/1165012972171694132/1165012972171694132
