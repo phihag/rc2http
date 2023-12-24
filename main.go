@@ -188,6 +188,14 @@ func pressButtonsHandler(w http.ResponseWriter, r *http.Request) {
 	io.WriteString(w, "{}")
 }
 
+func createHTTPServer(port string) {
+	http.HandleFunc("/press-buttons", pressButtonsHandler)
+	http.HandleFunc("/static/client.js", clientJSHandler)
+	http.HandleFunc("/", rootHandler)
+
+	log.Fatal(http.ListenAndServe(port, nil))
+}
+
 func main() {
 	// Set this program to lowest priority – any audio handling is more important!
 	syscall.Setpriority(syscall.PRIO_PGRP, 0, 19)
@@ -207,9 +215,8 @@ func main() {
 		os.Exit(0)
 	}
 
-	http.HandleFunc("/press-buttons", pressButtonsHandler)
-	http.HandleFunc("/static/client.js", clientJSHandler)
-	http.HandleFunc("/", rootHandler)
+	go createHTTPServer(*port)
 
-	log.Fatal(http.ListenAndServe(*port, nil))
+	// Wait forever
+	select {}
 }
