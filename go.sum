@@ -2,5 +2,7 @@ github.com/akamensky/argparse v1.4.0 h1:YGzvsTqCvbEZhL8zZu2AiA5nq805NZh75JNj4ajn
 github.com/akamensky/argparse v1.4.0/go.mod h1:S5kwC7IuDcEr5VeXtGPRVZ5o/FdhcMlQz4IZQuw64xA=
 github.com/cross-cpm/go-shutil v0.0.0-20190908093542-3fcbb1a2151e h1:x8RmdI3kIwKOGLb/SaraDgArPZ0Kb+0WmkM0K2P1CZk=
 github.com/cross-cpm/go-shutil v0.0.0-20190908093542-3fcbb1a2151e/go.mod h1:VPohcIQ6FLWAgzOT7enwtRTAvwfQBDD1v4c7mvY2s2c=
+github.com/mitchellh/go-ps v1.0.0 h1:i6ampVEEF4wQFF+bkYfwYgY+F/uYJDktmvLPf7qIgjc=
+github.com/mitchellh/go-ps v1.0.0/go.mod h1:J4lOc8z8yJs6vUwklHw2XEIiT4z4C40KtWVN3nvg8Pg=
 gitlab.com/gomidi/midi/v2 v2.0.30 h1:RgRYbQeQSab5ZaP1lqRcCTnTSBQroE3CE6V9HgMmOAc=
 gitlab.com/gomidi/midi/v2 v2.0.30/go.mod h1:Y6IFFyABN415AYsFMPJb0/43TRIuVYDpGKp2gDYLTLI=
